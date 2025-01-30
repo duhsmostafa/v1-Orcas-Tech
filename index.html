@@ -153,6 +153,11 @@ right: 100px;
     line-height: 50px;
     transform: translate(-50% , -50%) !important;
   }
+
+  .log img {
+  transition: opacity 0.5s ease;
+}
+
 </style>
 </head>
 
@@ -175,9 +180,15 @@ right: 100px;
                         <div class="elementor-container elementor-column-gap-default">
                             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eab6a16" data-id="eab6a16" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated" style="height: 80px;">
-    <div style="position: absolute; top: 10px; left: 70px;" class="log">
-        <img  src="" alt="logo">
-    </div>
+              <div id="logoA" class="log" style="position: absolute; top: -10px; left: 70px; width: 30%; display: block;">
+                <img src="./images/logo_W.png" alt="logo" style="width: 50%;">
+              </div>
+              <div id="logoB" class="log" style="position: absolute; top: -10px; left: 70px; width: 30%; display: none;">
+                <img src="./images/logo_B.png" alt="logo" style="width: 50%;">
+              </div>
+              
+              
+            
     <div class="toggle-btn">
         <div class="menu">
           <!-- Toggle Button -->
@@ -278,7 +289,8 @@ data-frame_1="st:470;sp:1000;sR:470;"
 data-frame_999="o:0;st:w;sR:1530;"
 style="z-index:10;font-family:'Nunito';"
 >Ever since the 1500s, when an unknown  is simply dummy text the printing. Dolor sit amet, consectetur adipisicing elit, sed do eius
-</rs-layer><a
+</rs-layer>
+<a
 id="slider-10-slide-10-layer-4"
 class="rs-layer rt-gen-button rev-btn"
 href="#" target="_self" rel="nofollow"
@@ -873,7 +885,7 @@ We Provide Best Solution For Your Business
     <div class="elementor-widget-container">
         <div class="radiantthemes-custom-button element-one hover-style-five fadeInUp " data-button-direction="left" data-button-fullwidth="false" >
         <a class="radiantthemes-custom-button-main"   target="_blank" rel="nofollow" >
-        <div class="placeholder">Discover More</div>
+        <div class="placeholder">Start a Project</div>
     </a>
     
     </div>
@@ -2093,8 +2105,24 @@ function handleToggle() {
   } else {
     menu.classList.remove('active');
   }
-}
 
+}
+    </script>
+    <script>
+      
+  window.addEventListener('scroll', function() {
+  let scrollPosition = window.scrollY;
+  let logoA = document.getElementById('logoA');
+  let logoB = document.getElementById('logoB');
+
+  if (scrollPosition > 100) { 
+    logoA.style.display = 'none'; 
+    logoB.style.display = 'block'; 
+  } else {
+    logoA.style.display = 'block'; 
+    logoB.style.display = 'none'; 
+  }
+});
     </script>
      </body>
      </html>
