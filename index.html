@@ -18,147 +18,7 @@
 <script type="text/javascript" src="./js/jquery.min.js" id="jquery-core-js"></script>
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/styleSheet.css">
-<style>
-    
-  /* Button for toggling the menu */
-  .nav-tgl {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    z-index: 100000000000000;
-    top: 10px;
-right: 100px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    padding: 0;
-    background: #fff;
-    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.5); 
-    /* line-height: 0.6; */
-    text-align: center;
-  }
-  
-  .nav-tgl > span {
-    display: inline-block;
-    position: relative;
-    height: 2px;
-    width: 34px;
-    border-radius: 1px;
-    background: #293335;
-    vertical-align: middle;
-  }
-  
-  .nav-tgl > span:before,
-  .nav-tgl > span:after {
-    display: inline-block;
-    position: absolute;
-    content: "";
-    height: 2px;
-    border-radius: 1px;
-    background: #293335;
-    transition: all 200ms;
-  }
-  
-  .nav-tgl > span:before {
-    top: -11px;
-    left: 3px;
-    width: 28px;
-  }
-  
-  .nav-tgl > span:after {
-    top: 11px;
-    left: 6px;
-    width: 22px;
-  }
-  
-  /* Menu background */
-  .nav:before {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 1);
-    transition: all 500ms ease-in-out;
-    clip-path: circle(30px at calc(100% - 65px) 65px);
-    visibility: hidden;
-  }
-  
-  /* When menu is active */
-  .menu.active .nav:before {
-    visibility: visible;
-    clip-path: circle(100%);
-  }
-  
-  .menu.active .nav-tgl > span {
-    height: 0;
-  }
-  
-  .menu.active .nav-tgl > span:after,
-  .menu.active .nav-tgl > span:before {
-    top: 0px;
-    left: 0;
-    width: 34px;
-  }
-  
-  .menu.active .nav-tgl > span:after {
-    transform: rotate(-45deg);
-  }
-  
-  .menu.active .nav-tgl > span:before {
-    transform: rotate(45deg);
-  }
-  
-  /* Links inside the menu */
-  .menu-links {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: opacity 300ms ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 100000000000;
-    margin-top: 50%;
-  }
-  
-  .menu.active .menu-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-  }
-  
-
-  /* Animation for fading in and sliding up */
-  @keyframes fadeInUp {
-    0% {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  .menu-links li a {
-    color: #ffffff;
-    font-size: 30px;
-    line-height: 50px;
-    transform: translate(-50% , -50%) !important;
-  }
-
-  .log img {
-  transition: opacity 0.5s ease;
-}
-
-</style>
+<link rel="stylesheet" href="./css/orcas.css">
 </head>
 
 <body>
@@ -180,12 +40,13 @@ right: 100px;
                         <div class="elementor-container elementor-column-gap-default">
                             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eab6a16" data-id="eab6a16" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated" style="height: 80px;">
-              <div id="logoA" class="log" style="position: absolute; top: -10px; left: 70px; width: 30%; display: block;">
-                <img src="./images/logo_W.png" alt="logo" style="width: 50%;">
+              <div id="logoA" class="log logo-a">
+                <img src="./images/logo_W.png" alt="logo" class="logo-img">
               </div>
-              <div id="logoB" class="log" style="position: absolute; top: -10px; left: 70px; width: 30%; display: none;">
-                <img src="./images/logo_B.png" alt="logo" style="width: 50%;">
+              <div id="logoB" class="log logo-b">
+                <img src="./images/logo_B.png" alt="logo" class="logo-img">
               </div>
+              
               
               
             
@@ -242,10 +103,11 @@ right: 100px;
 <div class="elementor-element elementor-element-7a9c303 elementor-widget elementor-widget-wp-widget-rev-slider-widget" data-id="7a9c303" data-element_type="widget" data-widget_type="wp-widget-rev-slider-widget.default">
 <div class="elementor-widget-container">
 <p class="rs-p-wp-fix"></p>
-<rs-module-wrap id="rev_slider_10_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 
 
     <!-- =========================Hero section==================== -->
+
+<rs-module-wrap>
 <rs-module id="rev_slider_10_1"  data-version="6.5.12">
 <rs-slides>
 <rs-slide style="position: absolute;" data-key="rs-10" data-title="Slide" data-in="o:0;" data-out="a:false;">
@@ -1639,14 +1501,8 @@ Mauris varius tellus eu lectus suscipit, sed sus cipito nisi sagai aenean pharet
 </section>
 
 
-<h2 style="text-align: center;">Our Process</h2>
-<div class="parent" style="  margin-top: 5%; margin-bottom: 5%;  opacity: 1;
-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-transform-style:preserve-3d;
-justify-content: center;
-width: 100%;
-height: 550px;
-display: flex;">
+<h2 class="ourProcess">Our Process</h2>
+<div class="parent">
     <img style="    max-width: 900px;
     position: absolute;" src="./images/5c252c969a1575629d85d0ce_desgin thinking1.svg" class="img-17" alt="">
     <img style="    max-width: 900px;
@@ -2023,7 +1879,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting
 <span class="wpcf7-form-control-wrap" data-name="YourMailAddress">
 <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Email Address" value="" type="email" name="YourMailAddress" />
 </span>
-<input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Subscribe" />
 </p>
 
 </form>
