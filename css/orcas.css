@@ -56,7 +56,6 @@
       background: #293335;
       transition: all 200ms;
     }
-    
     .nav-tgl > span:before {
       top: -11px;
       left: 3px;
@@ -169,6 +168,19 @@ display: flex;
   }
   .elementor-icon-list-item{
     margin-left: -1px;
+}
+.rev-slidebg{
+
+}
+@media (min-width: 1300px){
+.content{
+  position: absolute;
+  left: -10%;
+}
+.rightImage{
+  position: absolute;
+  left: 10%;
+}
 }
   @media (max-width: 760px){
 .elementor-icon-list-item{
