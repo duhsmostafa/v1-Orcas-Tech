@@ -172,6 +172,12 @@ display: flex;
 .rev-slidebg{
 
 }
+.HeroBtn a{
+  transition: all 0.4s ease-in-out !important;
+}
+.HeroBtn:hover a{
+  margin-top: -10px !important;
+}
 @media (min-width: 1300px){
 .content{
   position: absolute;
