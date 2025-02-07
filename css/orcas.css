@@ -13,8 +13,9 @@
     display: none;
   }
   
-  .logo-img {
-    width: 50%;
+  .log {
+    width: 15%;
+    margin-top: 15px;
   }
   
     /* Button for toggling the menu */
