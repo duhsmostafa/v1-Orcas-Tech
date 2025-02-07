@@ -1,6 +1,6 @@
 .log {
     position: absolute;
-    top: -10px;
+    top:5px;
     left: 70px;
     width: 30%;
   }
@@ -13,9 +13,8 @@
     display: none;
   }
   
-  .log {
-    width: 15%;
-    margin-top: 15px;
+  .logo-img {
+    width: 50%;
   }
   
     /* Button for toggling the menu */
@@ -182,12 +181,50 @@ display: flex;
 @media (min-width: 1300px){
 .content{
   position: absolute;
-  left: -10%;
+  left: -15%;
 }
 .rightImage{
   position: absolute;
   left: 10%;
 }
+
+.log {
+  position: absolute;
+  top:15px;
+  left: 85px;
+  width: 30%;
+}
+
+.logo-a {
+  display: block;
+}
+
+.logo-b {
+  display: none;
+}
+
+.logo-img {
+  width: 45%;
+}
+.rt-header-inner{
+  height: 120px !important;
+}
+.nav-tgl {
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  right: 120px;
+}
+#slider-10-slide-10-layer-10 {
+  position: absolute !important;
+  left: 0px !important;
+  transform: translateX(-300px) !important;
+}
+.footer-logo img {
+  width: 300px !important; 
+  height: auto !important; 
+}
+
 }
   @media (max-width: 760px){
 .elementor-icon-list-item{
@@ -220,7 +257,6 @@ display: flex;
       }
       .nav-tgl > span {
         width: 28px;
-
       }
   }
 @media (max-width: 760px) {
