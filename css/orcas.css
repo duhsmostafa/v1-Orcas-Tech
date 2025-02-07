@@ -16,6 +16,9 @@
   .logo-img {
     width: 50%;
   }
+  .logoBlack{
+    width: 50%;
+  }
   
     /* Button for toggling the menu */
     .nav-tgl {
@@ -178,7 +181,7 @@ display: flex;
 @media (min-width: 1300px){
 .content{
   position: absolute;
-  left: -15%;
+  left: -8%;
 }
 .rightImage{
   position: absolute;
@@ -203,6 +206,9 @@ display: flex;
 .logo-img {
   width: 45%;
 }
+.logoBlack{
+  width: 40% !important;
+}
 .rt-header-inner{
   height: 120px !important;
 }
@@ -215,7 +221,7 @@ display: flex;
 #slider-10-slide-10-layer-10 {
   position: absolute !important;
   left: 0px !important;
-  transform: translateX(-300px) !important;
+  transform: translateX(-100px) !important;
 }
 .footer-logo img {
   width: 300px !important; 
@@ -264,11 +270,13 @@ display: flex;
     }
   
     .logo-img {
-      width: 80%;   /* Adjust the image size to fit the screen */
+      width: 80%;
     }
-  
+    .logoBlack{
+      width: 70%;
+    }
     .logo-a,
     .logo-b {
-      display: block; /* Make both logos visible on small screens */
+      display: block;
     }
   }
