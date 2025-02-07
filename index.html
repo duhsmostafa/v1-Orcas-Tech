@@ -1976,21 +1976,29 @@ function handleToggle() {
 
 }
     </script>
+
 <script>
     window.addEventListener('scroll', function() {
-      let scrollPosition = window.scrollY;
-      let logoA = document.getElementById('logoB');
-      let logoB = document.getElementById('logoA');
-  
-      if (scrollPosition === 0) { 
-        logoA.style.display = 'none'; 
-        logoB.style.display = 'block'; 
-      } else {
+    let scrollPosition = window.scrollY;
+    let logoA = document.getElementById('logoA');
+    let logoB = document.getElementById('logoB');
+
+    if (scrollPosition === 0) { 
         logoA.style.display = 'block'; 
         logoB.style.display = 'none'; 
-      }
-    });
-  </script>
-  
-     </body>
-     </html>
+    } 
+    else if (scrollPosition >= 200) { 
+        logoA.style.display = 'none'; 
+        logoB.style.display = 'block'; 
+    }
+    else {
+        setTimeout(function() {
+            logoA.style.display = 'none'; 
+            logoB.style.display = 'block'; 
+        }, 30000); 
+    }
+});
+</script>
+
+    </body>
+    </html>
