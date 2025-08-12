@@ -15,3 +15,9 @@ _justFlipIt_panel {perspective:1000px;-webkit-perspective:1000px;-moz-perspectiv
 ._justFlipIt_panel .backY{height:inherit;position:absolute;top:0;z-index:1000;-webkit-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-ms-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;transition:all .4s ease-in-out}._justFlipIt_panel._flipY_ .front{z-index:900;-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg)}._justFlipIt_panel._flipY_ .backY{z-index:1000;-webkit-transform:rotateX(0) rotateY(0);-moz-transform:rotateX(0) rotateY(0)}
 
 
+.section{
+margin-left: -20%;
+width: 100%;
+padding: 20px;
+
+}
