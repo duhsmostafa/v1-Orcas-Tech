@@ -649,13 +649,12 @@ ul.dropdown-menu {
 
 /* About-History */
 .about-icon {
-    transform: scale(1);
+width: 120px;
 }
-
-.about-icon:hover {
-    transform: scale(1.3);
-    transition: 0.4s linear;
-    margin-bottom: 28px;
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Service Section */
@@ -1691,9 +1690,9 @@ a.thumbnail img {
 
 /* //////////////////////////////////////// History-About Page ///////////////////////////////*/
 .history-ab .h-ab-values img {
-    width: 120px;
-    height: 120px;
-}
+    width: 10px !important;
+    height: 10px !important;
+} 
 
 /* ///////////////////////////////////// Career-Openings ///////////////////////////////////*/
 .search-box input {
